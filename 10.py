@@ -1,6 +1,8 @@
-a=list(input("enter the integers").split(","))
-for i in range(len(a)):
-    if int(a[i])>100:
-        a[i]="over"
-        
-print("the modified list :",a)
+def factors(k):
+    a=[]
+    for i in range(1,k+1):
+        if k%i==0:
+            a.append(i)
+    return(a)
+c=int(input("enter the number to find factors"))
+print(f"the factos of the number {c} is {factors(c)}")
