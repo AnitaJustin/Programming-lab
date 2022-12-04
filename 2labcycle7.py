@@ -3,10 +3,7 @@ def ingly(a):
         a.append("ly")
     else:
         a.append("ing")
-    x=""
-    for i in a:
-        x+=i
-    print(x)
+    print(''.join(a))
 
 j=list(input("enter the word"))
 ingly(j)
